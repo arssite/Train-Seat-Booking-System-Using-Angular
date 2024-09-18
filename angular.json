@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "seat-booking-app": {
+      "architect": {
+        "build": {
+          "options": {
+            "outputPath": "dist/seat-booking-app",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "styles": ["src/styles.css"],
+            "scripts": []
+          }
+        },
+        "serve": {
+          "options": {
+            "browserTarget": "seat-booking-app:build"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Train Seat Booking System Using Angular </h2>
+
+  <input
+    type="number"
+    [(ngModel)]="seatsToBook"
+    placeholder="Enter number of seats to book"
+    min="1"
+    max="7"
+  />
+  <button (click)="bookSeats()">Book Seats</button>
+
+  <table>
+    <tr *ngFor="let row of coach">
+      <td *ngFor="let seat of row" [ngClass]="isSeatBooked(seat)">
+        {{ seat.number }}
+      </td>
+    </tr>
+  </table>
+
+  <p>
+    Legend: <span class="available">Available</span> |
+    <span class="booked">Booked</span>
+  </p>
+  <marquee
+    >Assignment Submitted by <b>ANMOL R. SRIVASTAVA</b> &nbsp; &nbsp;Email :
+    <b>anmol2003srivastava@gmail.com</b></marquee
+  >
+  <br />
+</div>

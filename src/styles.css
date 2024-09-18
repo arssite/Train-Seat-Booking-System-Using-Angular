@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for the seat booking system */
+.container {
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Title Styling */
+h2 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Input and Button Styling */
+input[type='number'] {
+  padding: 10px;
+  width: 120px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Table Styling for Seats */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Styling for Available and Booked Seats */
+.available {
+  background-color: #2ecc71;
+}
+
+.booked {
+  background-color: #e74c3c;
+  cursor: not-allowed;
+}
+
+/* Hover effect for available seats */
+.available:hover {
+  background-color: #27ae60;
+  transform: scale(1.1);
+}
+
+/* Styling for the legend */
+p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+p span {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+span.available {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+span.booked {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  td {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input[type='number'] {
+    width: 100px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

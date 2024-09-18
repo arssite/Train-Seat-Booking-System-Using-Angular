@@ -1,0 +1,24 @@
+{
+  "name": "seat-booking-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test"
+  },
+  "dependencies": {
+    "@angular/animations": "13.4.0",
+    "@angular/common": "^13.0.0",
+    "@angular/compiler": "13.4.0",
+    "@angular/core": "^13.0.0",
+    "@angular/forms": "^13.0.0",
+    "@angular/platform-browser": "^13.0.0",
+    "@angular/platform-browser-dynamic": "^13.0.0",
+    "rxjs": "^6.6.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular/cli": "^13.0.0",
+    "typescript": "~4.4.2"
+  }
+}
